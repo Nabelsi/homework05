@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    <style>
+    table{
+          margin-top: 40px;width: 60%;
+          border-radius: 15px;
+          overflow: hidden;
+          border: 3px;
+          }
+    table,tr,th,td{
+          border: 1px solid;
+          text-align:center;
+          }
+    tr,th,td{
+              padding:3px;}
+    body{
+        font-size: larger;
+        background-color:seagreen;
+        border: 1px solid;
+        border-radius: 25px;outline: none;padding: 15px 5px;margin-bottom:10px;text-align: center;justify-content: center;margin-top: 10px;}
+    button{
+        border:1px;
+        border-radius: 15px;
+        outline: none;
+        padding: 15px 5px;
+        margin-bottom:10px;
+        text-align: center;
+        margin-top: 10px;
+        font-size: medium;
+        display:inline-block;
+        
+        
+        }
+    .aussehen{
+        border-radius: 5px;
+        height: 50px;
+            }
+     
+   
+    </style>
+</head>
+<body>
+    <center>
+<form action="form.html" method="GET">    
+<table style="background-color:gray;color:#fff;font-size: large;">
+<tr>
+    <th style="font-size: xx-large;color:rgb(78, 78, 12);word-spacing: 6px;letter-spacing: 4px;" colspan="2">contact Form</th>
+</tr>
+<tbody>
+    <tr class="aussehen">
+   <th class="aussehen"> <label class="aussehen"> choose your browser:</th>
+        <td><input type="text" list="browsers" name="myBrowser" height="20px" width="100px"></label>
+        <label class="aussehen"><datalist id="browsers">
+          <option value="Chrome">
+          <option value="Firefox">
+          <option value="Internet Explorer">
+          <option value="Opera">
+          <option value="Safari">
+          <option value="Microsoft Edge">
+        </datalist></label></td>
+    </tr>
+<tr>
+    
+    <th class="aussehen"> <label class="aussehen" for="fname"></label>First Name </th>
+    <td class="aussehen"> <input type="text" name="Fname" id="fname" placeholder=" type your First Name" required >
+     </td>
+</tr>
+    <th class="aussehen"><label class="aussehen" for="lname"></label>Last Name </th>
+    <td class="aussehen"><input type="text" name="Fname" id="lname"  placeholder="type your Last Name" required> </td>
+</tr>
+<tr>
+    <th class="aussehen"> <label class="aussehen" for="email"></label>E-mail </th>
+    <td class="aussehen" ><input type="email" name="email" id="email"  placeholder="type your E-mail" required> </td>
+</tr>
+
+<tr>
+    <th class="aussehen"> <label class="aussehen" for="password"></label>password </th>
+    <td class="aussehen">  <input  type="password" name="password" id="password"required> </td>
+</tr>
+
+<tr>
+    <th rowspan="2">Gender</th>
+    <td rowspan="2" class="aussehen"><input type="radio" name="Gender" value="Male" required>Male <input type="radio" name="Gender" value="FeMale" required>FeMale</td>
+  
+</tr>
+<tr>
+</tr>
+<tr>
+    <th  class="aussehen" rowspan="3">Choose your system</th>
+    <td class="aussehen"><input type="checkbox" name="Windows" value="Windows" >Windows</td>
+</tr>
+
+<tr>
+    <td class="aussehen"><input type="checkbox" name="Mac" value="Mac">Mac</td>
+</tr>
+<tr>
+    <td class="aussehen"><input type="checkbox" name="Linux" value="Linux">Linux</td>
+</tr>
+<tr></tr>
+    <th class="aussehen">Choose a File</th>
+    <td class="aussehen"><input type="file"></td>
+</tr>
+<tr>
+    <th class="aussehen" >Choose a Color</th>
+    <td class="aussehen"><input type="color" onselect="none"></td>
+</tr>
+<tr>
+    <th rowspan="2">statue</th>
+    <td class="aussehen">
+        <select name="statue" size="1px">
+            <option value="single">single</option>
+            <option value="married">married</option>
+            <option value="other">other</option>
+        </select>
+    </td>
+</tr>
+
+</tbody>
+<tfoot>
+   
+    <tr>
+        <td colspan="2" class="aussehen">
+                <h4>Send your notes</h4>
+
+                <Textarea cols="50" rows="10" name="textarea">
+
+                </Textarea>
+
+    </td>
+    </tr>
+    <tr>
+        <td class="aussehen">choose your strength in Html</td>
+       
+           
+	       
+       
+        <td><input type="range" min="0" max="100" step="20" ></td>
+    </tr>
+   <tr>
+       <td colspan="2">
+          <button style="margin-right: 20px;background-color: rgb(70, 168, 67); width: 100px;color: white;">send</button>
+
+          <button style="margin-right: 100px; background-color: rgb(10, 10, 10); width:100px; color: white;">cancel</button>
+
+       </td>
+   </tr>
+   
+</tfoot>
+
+
+</center>
+</table>
+</form>
+</body>
+</html>
